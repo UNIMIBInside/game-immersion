@@ -1,5 +1,6 @@
 ---
 import Release from "@components/Release.astro";
+import Button from "@components/Button.astro";
 import room from "@/assets/room-setting.png";
 import brief from "@/assets/brief-en.png";
 import script from "@/assets/script-en.png";
@@ -54,13 +55,23 @@ import script from "@/assets/script-en.png";
       </div>
     </Release>
     <Release title="Script" link="#">
-      <div>
         <div
         class="rounded-lg bg-gray-600 aspect-video grid place-content-center font-bold"
       >
         Video
       </div>
-      </div>
+    </Release>
+    <Release title="Questionnaires" version="V2" link="#">
+      <Button href="#" variant="secondary">
+        1
+      </Button>
+      <Button href="#" variant="secondary" className="ml-4">
+        2
+      </Button>
+      <Button href="#" variant="secondary" className="ml-4">
+        3
+      </Button>
     </Release>
   </ol>
+
 </section>
